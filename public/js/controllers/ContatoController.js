@@ -8,7 +8,7 @@ class ContatoController {
 
     adiciona(event) {
         event.preventDefault();
-        event.preventDefault();
+;
         alert("UFa")
         
     }

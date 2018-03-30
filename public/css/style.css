@@ -44,9 +44,6 @@
     
 }
 
-.header-cap {
-    font-size: 3.5rem;
-}
 
 .divx-50 {
     width: 50%;
@@ -67,6 +64,9 @@
 }
 
 
+input[type=checkbox], input[type=radio] {
+    opacity: 0;
+}
     
 
 
