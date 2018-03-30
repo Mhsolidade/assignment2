@@ -57,6 +57,15 @@
 
 }
 
+.btn-img-size {     /* mudar para tamanhos diferente */   
+      width: 12.5rem;     
+       height: 12.5rem; 
+}
+
+.btn-center{
+    align-items: center;
+}
+
 
     
 
@@ -104,6 +113,8 @@
     text-align: center;
     color:white;
 }
+
+
 
 @media( max-width: 768px){
     .titulo, .sub-titulo{

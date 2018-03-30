@@ -46,20 +46,19 @@
                                 eaque.
                             </p>
                             <div class="d-flex justify-content-around ">
-
-                                <div id="emotion" class="conteudo-bloco-primeiro form-publico-alvo">
-                                    <input type="radio" name="lead-alvo" value="designer" id="sad" hidden required  />
-                                    <label for="sad">
-                                        <img class="rounded img-publico-alvo" alt="foto designer"  src="./images/designer.png" >
-                                    </label>
-
-                                    <input type="radio" name="lead-alvo" value="recruta" id="happy" hidden required/>
-                                    <label for="happy">
-                                        <img class="rounded img-publico-alvo" alt="foto recruta"   src="./images/recruta.png" >
-                                    </label>
-                                </div>
-
-
+                                    <div id="select-btn" class="conteudo-bloco-primeiro form-publico-alvo">
+                                    
+                                        <input id="designer" type="radio" name="lead-alvo" value="designer" hidden/>
+                                        <label for="designer">
+                                            <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
+                                        </label>
+                                    
+                                        <input id="recruta" type="radio" name="lead-alvo" value="recruta" hidden/>
+                                        <label for="recruta">
+                                            <img class="rounded btn-img-size" alt="botao recruta" src="./images/recruta.png">
+                                        </label>
+                                    
+                                    </div>
                             </div>
                         </div>
                     
@@ -101,12 +100,15 @@
                 
                                             <p class="title-perguntas text-center text-uppercase ">Agora vamos ao pricipal</p>
                 
-                                            <div class="btn-group-toggle" data-toggle="buttons">
+                                            <div class="btn-group btn-group-toggle " data-toggle="buttons">
                                                     <label class="btn btn-success active">
-                                                        <input type="checkbox" checked autocomplete="off"> Sim
+                                                      <input type="radio" name="options" id="option1" autocomplete="off" value="sim"> Sim
                                                     </label>
-                                            </div>
-                                          
+                                                    
+                                                    <label class="btn btn-success">
+                                                      <input type="radio" name="options" id="option2" autocomplete="off" value="nao"> Não
+                                                    </label>
+                                                  </div>
                                                     <label for="exampleFormControlTextarea1"></label>
                                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                             
@@ -125,8 +127,10 @@
                                     
                                     
                                 </div>
-                                
-                                <input class="btn btn-success" type="submit" value="Submit">
+                                <div class="d-flex justify-content-md-center">
+                                    <input class="btn btn-success btn-center" type="submit" value="Submit">
+
+                                </div>
                             </div>
                             
                        
