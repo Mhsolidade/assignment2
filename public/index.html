@@ -18,8 +18,8 @@
 
 
     <header>
-        <div id="bg-image"></div>
-        <div class="">
+        
+        <div class="container">
 
             <div class="row">
                 <div class="col-sm-5 mx-4">
@@ -36,79 +36,105 @@
 
 
     <main id="main">
-        <div class="container">
+        <div class="">
             <div class="">
-                <form id="myForm" class="myform" action="" class="form-group border border-warning">
+                <form id="myForm" class="myform" class="form-group border border-warning" onsubmit="contatoController.adiciona(event)">
                     <div class="m-4">
-                        <div class="">
+                        
+                        <div class="container">
                             <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio modi aspernatur, neque laboriosam
                                 eaque.
                             </p>
                             <div class="d-flex justify-content-around ">
 
                                 <div id="emotion">
-                                    <input type="radio" name="lead-alvo" value="designer" id="sad" hidden/>
+                                    <input type="radio" name="lead-alvo" value="designer" id="sad" hidden required  />
                                     <label for="sad">
-                                        <img class="border  rounded" alt="200x200" src="./images/designer.png" style="width: 12.5rem; height: 12.5rem;">
+                                        <img class="rounded img-publico-alvo" alt="foto designer"  src="./images/designer.png" >
                                     </label>
 
-                                    <input type="radio" name="lead-alvo" value="recruta" id="happy" hidden/>
+                                    <input type="radio" name="lead-alvo" value="recruta" id="happy" hidden required/>
                                     <label for="happy">
-                                        <img class="rounded" alt="foto recruta" src="./images/recruta.png" style="width:12.5rem; height: 12.5rem;">
+                                        <img class="rounded img-publico-alvo" alt="foto recruta"   src="./images/recruta.png" >
                                     </label>
                                 </div>
 
 
                             </div>
                         </div>
+                    
                     </div>
 
-                    <div class="d-flex justify-content-md-around m-4">
-                        <div class="d-flex flex-md-column divx-50 m-5">
-
-                            <p class="text-center text-uppercase display-4 font-weight-bold">Um pouco sobre você</p>
-
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="nome" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-
-                            <input type="email" class="form-control" id="validationCustom01" placeholder="email@exemplo" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="divx-50">
-                            <img class=" img-fluid img-thumbnai rounded" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
-
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-md-around m-4">
-                        <div class="divx-50">
-                            <img class=" img-fluid img-thumbnai rounded" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
-
-                        </div>
-                        <div class="d-flex flex-md-column divx-50 m-3">
-
-                            <p class="text-center text-uppercase display-4 font-weight-bold">Agora vamos ao pricipal</p>
-
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="nome" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-
-                            <input type="email" class="form-control" id="validationCustom01" placeholder="email@exemplo" required>
-                            <div class="valid-feedback">
-                                Looks good!
+                    <div class="bg-success segundo-bloco" >
+                        <div class="container" >
+                        <div class="d-flex justify-content-md-around m-4">
+                            <div class="d-flex flex-md-column divx-50 m-5">
+    
+                                    <p class="text-center text-uppercase">Um pouco sobre você</p>
+        
+                                    <input type="text" class="form-control" id="validationCustom01" placeholder="nome" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+        
+                                    <input type="email" class="form-control" id="validationCustom01" placeholder="email@exemplo" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="divx-50">
+                                    <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
+        
+                                </div>
                             </div>
                         </div>
 
                     </div>
+                    <div class="terceiro-bloco">
+                        <div class="container">
+                                <div class="d-flex justify-content-md-around m-4">
+                                        <div class="divx-50">
+                                            <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
+                
+                                        </div>
+                                        <div class="d-flex flex-md-column divx-50 m-3">
+                
+                                            <p class="text-center text-uppercase ">Agora vamos ao pricipal</p>
+                
+                                            <div class="btn-group-toggle" data-toggle="buttons">
+                                                    <label class="btn btn-success active">
+                                                        <input type="checkbox" checked autocomplete="off"> Sim
+                                                    </label>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1"></label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quarto-bloco bg-info">
+                                <div class="container">
+                                    <div class="d-flex flex-column justify-content-md-around m-4" >
+                                        <h1 class="text-uppercase">qual seria a solução ideal?</h1>
+                                        <div class=" form-group">
+                                            <label for="exampleFormControlTextarea1"></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <input class="btn btn-success" type="submit" value="Submit">
+                            </div>
+                            
+                        </div>
+
+            </form>
+
 
             </div>
-            </form>
-        </div>
         </div>
     </main>
 
