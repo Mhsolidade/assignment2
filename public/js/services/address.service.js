@@ -6,8 +6,8 @@ class AddressService {
         http.open("get", "http://api.ipify.org/?format=jsonp&callback", false);
 
         http.send();
-
-        return JSON.parse( http.responseText) ;
+        let ip =  http.responseText.split('"')[3];
+        return ip ;
 
     }
 
