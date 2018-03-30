@@ -7,5 +7,6 @@ class LeadModel {
     this.ip = "nome";
     //criar get ip
     this.data = new Date();
+    
   }
 }
