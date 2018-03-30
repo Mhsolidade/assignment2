@@ -1,14 +1,43 @@
-
-
-header {
+.grid-imag{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
     
-    background: url(../images/header.jpg) center center;
+    height: 300px;  
+    width: 100%;   
+   
+}
+.img-background{
+    /* display: grid; */
+    grid-column-start: 1;
+    grid-row: 1/3;
+    z-index: -1;
+    background-image: url(../images/header.jpg), linear-gradient(to right, rgba(31, 105, 40, 1),rgba(52, 110, 59, 0.9));
+    /* background: url('../assets/img/nature.jpg'); */
+    background-blend-mode: overlay;    
+    background-position: center center;    
+    background-size: cover;    
+    background-repeat: no-repeat;
+    /* filter: opacity(85%) blur(2px); */
+    color: #fff;    
+    overflow: hidden;
+
+
+    
+
+
+}
+.header-conteudo{
+    grid-column: 1/5;
+    grid-row: 1/3;
+   
      background-size: cover;
     overflow: hidden;
     height: 100%;
   
     
 }
+
 .img-publico-alvo{
     width:12.5rem; 
     height: 12.5rem;
@@ -44,7 +73,9 @@ header {
   }
   
    */
-
+.titulo, .sub-titulo{
+    color: white;
+   }
 
 .selected {
     background-color: #ccc;
@@ -75,6 +106,20 @@ header {
 }
 
 @media( max-width: 768px){
+    .titulo, .sub-titulo{
+        color: white;
+        text-align: center;
+        margin: 0px;
+       
+       }
+       .titulo {
+           font-size: 2rem;
+       }
+    
+       /* .sub-titulo{
+           font-size: rem;
+       } */
+
     .primeiro-bloco, .segundo-bloco, .terceiro-bloco, .quarto-bloco{
         display: flex;
         flex-direction: column;
@@ -118,4 +163,5 @@ header {
         text-align: center;
         color:white;
     }
+    
 }
