@@ -1,8 +1,8 @@
 
 
 
-export class  ContatoController {
+class ContatoController {
     constructor() {
-        
+        alert('De volta as origens')
     }
 }
