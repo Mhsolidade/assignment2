@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/validator.css">
 
     <title>Document</title>
 </head>
@@ -38,7 +39,10 @@
     <main id="main">
         
             <div class="">
-                <form id="myForm" class="myform" class="form-group border border-warning" onsubmit="contatoController.adiciona(event)">
+                <form id="myForm" 
+                class="form-group border border-warning" 
+                onsubmit="contatoController.adiciona(event)" 
+                >
                     <div class="m-4">
                         
                         <div class="primeiro-bloco">
@@ -74,14 +78,10 @@
                                     <p class="title-perguntas text-center text-uppercase">Um pouco sobre você</p>
         
                                     <input type="text" class="form-control" id="validationCustom01" placeholder="nome" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
+                                   
         
                                     <input type="email" class="form-control" id="validationCustom01" placeholder="email@exemplo" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
+                                    
                                 </div>
                                 <div class="divx-50">
                                     <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
@@ -112,7 +112,7 @@
                                                     </label>
                                                   </div>
                                                     <label for="exampleFormControlTextarea1"></label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                                             
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@
                                         <h1 class="title-perguntas text-uppercase titulo">qual seria a solução ideal?</h1>
                                         
                                             <label for="exampleFormControlTextarea1"></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                                         </div>
                                     
                                     
@@ -179,30 +179,13 @@
     <script src="./js/models/lead.model.js"></script>
 
     <script>
-
         let contatoController = new ContatoController();
 
        $('#select-btn label').click(function () {
             console.log('teste selected')
             $(this).addClass('selected').siblings().removeClass('selected');
         });
-        (function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+       
     </script>
 
 
