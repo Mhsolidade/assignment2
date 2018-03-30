@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "gamaassigment2",
-    "gamaassigment2": "gamaassigment2"
+    "default": "gamaassigment2"
   }
 }
