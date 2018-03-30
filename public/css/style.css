@@ -122,7 +122,12 @@ input[type=checkbox], input[type=radio] {
         text-align: center;
         margin: 0px;
        
-       }
+    }
+    .btn-img-size {
+        width: 8.5rem;
+        height: 10.5rem;
+    }
+
        .titulo {
            font-size: 2rem;
        }
@@ -142,7 +147,7 @@ input[type=checkbox], input[type=radio] {
         flex-direction: column;
         align-items: center;
     }
-    .form-nome-email, .form-problemas, .form-publico-alvo{
+    .form-nome-email, .form-problemas{
         display: flex;
         flex-direction: column;
         align-items: center;
