@@ -1,0 +1,25 @@
+/* validator css */
+
+input[type="text"]:not(:placeholder-shown):invalid,
+input[type="email"]:not(:placeholder-shown):invalid,
+input[type="radio"]:not(:placeholder-shown):invalid {
+   border-color: rgb(199, 49, 12);
+ 
+}
+
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+   border-color: rgb(12, 199, 28);
+
+   
+}
+
+input[type="text"]:focus + label, 
+input[type="email"]:focus + labe,
+input[type="text"]:valid + label,
+input[type="email"]:valid + label,
+input[type="text"]:not([value=""]):not(:placeholder-shown):invalid + label,
+input[type="email"]:not([value=""]):not(:placeholder-shown):invalid + label  {
+ opacity: 0;
+}
