@@ -178,12 +178,10 @@
 
         let contatoController = new ContatoController();
 
-        $('#emotion input:radio').addClass('input_hidden');
-        $('#emotion label').click(function () {
+       $('#select-btn label').click(function () {
             console.log('teste selected')
             $(this).addClass('selected').siblings().removeClass('selected');
         });
-
         // $('#myForm input').on('change', function () {
         //     alert($('input[name=lead-alvo]:checked', '#myForm').val());
         // });
