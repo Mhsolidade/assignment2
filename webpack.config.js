@@ -9,8 +9,8 @@ const HtmlWepackPlugin = require('html-webpack-plugin');
 let plugins = [];
 
 
-const extractCSS = new ExtractTextPlugin({ filename: "[name].css" })
-const extractSASS = new ExtractTextPlugin({ filename: "[name].css" })
+const extractCSS = new ExtractTextPlugin({ filename: "assets/[name].css" })
+const extractSASS = new ExtractTextPlugin({ filename: "assets/[name].css" })
 
 plugins.push(new HtmlWepackPlugin({
 
@@ -54,14 +54,20 @@ plugins.push(new webpack.DefinePlugin({
 
 module.exports = {
     mode: process.env.NODE_ENV,
+    watch: true,
     entry: './app/js/app.js',
     output: {
-        filename: 'bundle.js',
+        filename: 'assets/bundle.js',
         path: path.resolve(__dirname, 'public')
     },
     devServer: {
         contentBase: path.resolve(__dirname), // New
-        historyApiFallback: true
+        historyApiFallback: true,
+        proxy: {
+            '/*': {
+              host: 'https://gamaassigment2.firebaseapp.com/'
+            }
+        }
     },
     module: {
         rules: [
