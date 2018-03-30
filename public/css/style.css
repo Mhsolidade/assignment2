@@ -1,17 +1,11 @@
 
-html, body {
-    background:  rgb(243, 236, 236);
-
-}
 
 header {
     
     background: url(../images/header.jpg) center center;
-    background-color: aquamarine;
-    background-size: cover;
+     background-size: cover;
     overflow: hidden;
     height: 100%;
-    color: #fff;
   
     
 }
@@ -30,13 +24,6 @@ header {
 }
 
 
-.img-body{
-    /* width: auto; */
-    /* min-height: 200px;
-    max-width: 440px;
-    min-height: 350px;
-    min-width: 250px; */
-}
 .title-perguntas{
 
 }
@@ -61,5 +48,74 @@ header {
 
 .selected {
     background-color: #ccc;
+    
+}
+.primeiro-bloco, .segundo-bloco, .terceiro-bloco, .quarto-bloco{
+    margin: 0px;
+}
+.primeiro-bloco{
+    background: white;
+    margin: 0;
+    
+}
+.segundo-bloco{
+    background-color:rgba(223, 226, 230, 0.5) ;
+
+}
+.terceiro-bloco{
+    background-color:rgb(255, 255, 255) ;
+}
+.quarto-bloco{
+    background-color:rgba(28, 67, 96,0.9) ;
+
+}
+.quarto-bloco .titulo{
+    text-align: center;
+    color:white;
 }
 
+@media( max-width: 768px){
+    .primeiro-bloco, .segundo-bloco, .terceiro-bloco, .quarto-bloco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    .conteudo-bloco-preimeiro, .conteudo-bloco-segundo, .conteudo-bloco-terceiro, .conteudo-bloco-quarto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-nome-email, .form-problemas, .form-publico-alvo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .divx-50{
+        width: 100%;
+    }
+    
+    .segundo-bloco{
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(223, 226, 230, 0.5) ;
+    
+    }
+    .terceiro-bloco{
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(255, 255, 255) ;
+    }
+    .quarto-bloco{
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(28, 67, 96,0.9) ;
+    
+    }
+    .quarto-bloco .titulo{
+        text-align: center;
+        color:white;
+    }
+}
