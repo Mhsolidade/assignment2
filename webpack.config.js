@@ -4,13 +4,17 @@ const babiliPlugin = require('babili-webpack-plugin');
 const optimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWepackPlugin = require('html-webpack-plugin');
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let plugins = [];
 
 
 const extractCSS = new ExtractTextPlugin({ filename: "assets/[name].css" })
 const extractSASS = new ExtractTextPlugin({ filename: "assets/[name].css" })
+
+plugins.push(new CopyWebpackPlugin([
+    { from: __dirname + '/app/img', to: 'assets/img', force: true }
+]));
 
 plugins.push(new HtmlWepackPlugin({
 
@@ -65,7 +69,7 @@ module.exports = {
         historyApiFallback: true,
         proxy: {
             '/*': {
-              host: 'https://gamaassigment2.firebaseapp.com/'
+                host: 'https://gamaassigment2.firebaseapp.com/'
             }
         }
     },
@@ -111,6 +115,11 @@ module.exports = {
                         }
                     ]
                 })
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: 'file-loader'
+
             }
         ]
     },
