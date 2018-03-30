@@ -7,20 +7,32 @@ html, body {
 header {
     
     background: url(../images/header.jpg) center center;
+    background-color: aquamarine;
     background-size: cover;
     overflow: hidden;
     height: 100%;
-    z-index: 2;
     color: #fff;
   
     
 }
 
-#bg-image {
-
-
-
+.header-cap {
+    font-size: 3.5rem;
 }
+
+.divx-50 {
+    width: 50%;
+}
+
+
+.img-auto {
+    max-width: 440px;
+    width: auto;
+}
+
+
+    
+
 
 /* .image-radio input[type=radio] {
     display: none;
@@ -34,20 +46,9 @@ header {
   }
   
    */
-   input_hidden {
-    position: absolute;
-    left: -9999px;
-}
+
 
 .selected {
     background-color: #ccc;
 }
 
-#emotion label {
-    display: inline-block;
-    cursor: pointer;
-}
-
-#emotion label img {
-    padding: 3px;
-}
