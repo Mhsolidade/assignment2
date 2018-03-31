@@ -12,8 +12,8 @@
     grid-column-start: 1;
     grid-row: 1/5;
     z-index: -1;
-    background-image: url(../images/header.jpg), linear-gradient(to right, rgba(31, 105, 40,0.7),rgba(52, 110, 59, 0.7));
-    /* background: url('../assets/img/nature.jpg'); */
+    background-image: url(../images/header.jpg), linear-gradient(to left, rgba(23, 23, 23, 0.7),rgba(52, 110, 59, 0.9));
+   
     background-blend-mode: overlay;
     background-position: center center;
     background-size: cover;
