@@ -54,8 +54,8 @@
             <div class="row">
                 <div class="col-sm-9 mx-4">
                     <h1 class="header-cap font-weight-bold titulo text-uppercase">como avaliar um designer na hora da contratação</h1>
-                    <p class="lead sub-titulo">na hora da contratação nem sempre é possível avaliar as competências
-                                                de forma prática. Por isso queremos saber quais são as principais dificuldades nessa hora.
+                    <p class="lead sub-titulo">na hora da contratação nem sempre é possível avaliar as competências de forma prática. Por isso queremos
+                        saber quais são as principais dificuldades nessa hora.
                     </p>
                     <p class="lead sub-titulo">Designer ou recrutador, compartilhe sua experiência e nos ajude a descobrir como melhorar este mercado</p>
                 </div>
@@ -68,117 +68,114 @@
 
     <main id="main">
 
-        
-            <div class="">
-                <form id="myForm" 
-                class="form-group" 
-                onsubmit="contatoController.adiciona(event)" 
-                >
-                    <div class="m-4">
-                        
-                        <div class="primeiro-bloco">
-                            <div class="d-flex justify-content-around ">
-                                    <div id="select-btn" class="conteudo-bloco-primeiro form-publico-alvo">
-                                    
-                                        <h3 class="text-uppercase">Em uma experiência de recrutamento, você é:</h3>
-                                        <label for="designer">
-                                            <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
-                                            <input id="designer" minlength="6" type="radio" name="lead-alvo" value="designer" required />
-                                        </img>
-                                        </label>
-                                    
-                                        <input id="recruta" type="radio" name="lead-alvo" value="recruta" required />
-                                        <label for="recruta">
-                                            <img class="rounded btn-img-size" alt="botao recruta" src="./images/recruta.png">
-                                        </label>
-                                    
-                                    </div>
 
-                            </div>
-                        </div>
-                    </div>
+        <div class="">
+            <form id="myForm" class="form-group" onsubmit="leadController.adiciona(event)">
+                <div class="m-4">
 
-                </div>
+                    <div class="primeiro-bloco">
+                        <div class="d-flex justify-content-around ">
+                            <div id="select-btn" class="conteudo-bloco-primeiro form-publico-alvo">
 
-                <div class="segundo-bloco">
-                    <div class="container">
-                        <div class="conteudo-bloco-segundo  d-flex  justify-content-md-around m-4">
-                            <div class="d-flex flex-md-column divx-50 m-5 form-nome-email">
+                                <h3 class="text-uppercase">Em uma experiência de recrutamento, você é:</h3>
+                                <label for="designer">
+                                    <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
+                                    <input id="designer" type="radio" name="lead-alvo" value="B2C" required />
+                                    </img>
+                                </label>
 
-                                    <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
-        
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Seu nome" required>
-        
-                                    <input type="email" class="form-control" id="validationCustom01" placeholder="Seu e-mail" required>
-                                    <input type="email" class="form-control" id="validationCustom01" placeholder="Portfolio ou LinkedIn" >
-
-                                    
-                                </div>
-                                <div class="divx-50">
-                                    <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
-        
-                                </div>
-
-
-
+                                <input id="recruta" type="radio" name="lead-alvo" value="B2B" required />
+                                <label for="recruta">
+                                    <img class="rounded btn-img-size" alt="botao recruta" src="./images/recruta.png">
+                                </label>
 
                             </div>
 
                         </div>
                     </div>
-
-                    <div class="terceiro-bloco">
-                        <div class="container">
-                                <div class="d-flex justify-content-md-around m-4 conteudo-bloco-terceiro">
-                                        <div class="divx-50">
-                                            <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-aoponto.png" class="img-fluid" alt="Responsive image">
-                
-                                        </div>
-                                        <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
-                
-                                            <h2 class="title-perguntas text-center text-uppercase ">Agora vamos ao pricipal</h2>
-                                            <p id="">Você já teve problemas com análises de competências?</p>
-                
-                                            <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                                                <label class="btn btn-success ">
-                                                    <input type="radio" name="options" id="option1" autocomplete="off" value="sim"> Sim
-                                                </label>
-                                                
-                                                <label class="btn btn-success">
-                                                    <input type="radio" name="options" id="option2" autocomplete="off" value="nao"> Não
-                                                </label>
-                                            </div>
-                                            <label for="exampleFormControlTextarea1"></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" name="Você já teve problemas com análises de competências?" rows="3" placeholder="Como você lidou com isso? (max. 500 caracteres)"></textarea>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="quarto-bloco ">
-                    <div class="container">
-                        <div class="d-flex flex-column justify-content-md-center m-4 conteudo-bloco-quarto">
-                            <h1 class="title-perguntas text-uppercase titulo">qual seria a solução ideal?</h1>
-
-                            <label for="exampleFormControlTextarea1"></label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                        </div>
-
-
-                    </div>
-                    <div class="d-flex justify-content-md-center">
-                        <input class="btn btn-success btn-center" type="submit" value="Submit">
-
-                    </div>
                 </div>
 
+        </div>
+
+        <div class="segundo-bloco">
+            <div class="container">
+                <div class="conteudo-bloco-segundo  d-flex  justify-content-md-around m-4">
+                    <div class="d-flex flex-md-column divx-50 m-5 form-nome-email">
+
+                        <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
+
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+
+                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+                        <input type="text" class="form-control" id="social" placeholder="Portfolio ou LinkedIn">
 
 
-            </form>
+                    </div>
+                    <div class="divx-50">
+                        <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="terceiro-bloco">
+            <div class="container">
+                <div class="d-flex justify-content-md-around m-4 conteudo-bloco-terceiro">
+                    <div class="divx-50">
+                        <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-aoponto.png" class="img-fluid" alt="Responsive image">
+
+                    </div>
+                    <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
+
+                        <h2 class="title-perguntas text-center text-uppercase ">Agora vamos ao pricipal</h2>
+                        <p>Você já teve problema com análise de competências técnicas em um processo seletivo?</p>
+
+                        <div id="opcao" class="btn-group btn-group-toggle " data-toggle="buttons">
+                            <label for="sim" class="btn btn-success ">
+                                <input type="radio" name="problema" id="sim" value="Sim" required> Sim
+                            </label>
+
+                            <label id="nao" class="btn btn-success">
+                                <input type="radio" name="problema" id="nao" value="Não"> Não
+                            </label>
+                        </div>
+                        <label for="comoLidar"></label>
+                        <textarea class="form-control" id="comoLidar" name="comoLidar" rows="3" placeholder="Quais? (max. 500 caracteres)" maxlength="500"></textarea>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="quarto-bloco ">
+            <div class="container">
+                <div class="d-flex flex-column justify-content-md-center m-4 conteudo-bloco-quarto">
+                    <h1 class="title-perguntas text-uppercase titulo">qual seria a solução ideal?</h1>
+
+                    <label for="solucao"></label>
+                    <textarea class="form-control" id="solucao" rows="3" placeholder="(max. 500 caracteres)" maxlength="500"></textarea>
+                </div>
+
+
+            </div>
+            <div class="d-flex justify-content-md-center">
+                <input class="btn btn-success btn-center" type="submit" value="Submit">
+
+            </div>
+        </div>
+
+
+
+        </form>
 
 
         </div>
@@ -223,6 +220,9 @@
     <script src="./js/controllers/lead.controller.js"></script>
 
     <script>
+        $("#myForm").submit(function (e) {
+            e.preventDefault();
+        });
         let leadController = new LeadController();
 
         $('#select-btn label').click(function () {
