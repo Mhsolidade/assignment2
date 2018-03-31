@@ -20,8 +20,7 @@ class LeadModel {
     op == 'Sim' ?  resp = `${op}, ${comoLidar}` : resp = `${op}`;
     rq['Você já teve problema com análise de competências técnicas em um processo seletivo?'] = resp;
     rq['qual seria a solução ideal'] = $("#solucao").val();
-
-    console.log(rq);
+;
     return rq;
   }
 
