@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/validator.css">
 
-    <title>Document</title>
+    <title>Designer Match</title>
 </head>
 
 
@@ -23,11 +23,12 @@
         <div class="container header-conteudo">
 
             <div class="row">
-                <div class="col-sm-5 mx-4">
-                    <h1 class="header-cap font-weight-bold titulo">RECRUTAMENTO DE DESIGNERS</h1>
-                    <p class="lead sub-titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio modi aspernatur, neque laboriosam
-                        eaque.
+                <div class="col-sm-9 mx-4">
+                    <h1 class="header-cap font-weight-bold titulo text-uppercase">como avaliar um designer na hora da contratação</h1>
+                    <p class="lead sub-titulo">na hora da contratação nem sempre é possível avaliar as competências
+                                                de forma prática. Por isso queremos saber quais são as principais dificuldades nessa hora.
                     </p>
+                    <p class="lead sub-titulo">Designer ou recrutador, compartilhe sua experiência e nos ajude a descobrir como melhorar este mercado</p>
                 </div>
             </div>
         </div>
@@ -46,13 +47,10 @@
                     <div class="m-4">
                         
                         <div class="primeiro-bloco">
-                            <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio modi aspernatur, neque laboriosam
-                                eaque.
-                            </p>
                             <div class="d-flex justify-content-around ">
                                     <div id="select-btn" class="conteudo-bloco-primeiro form-publico-alvo">
                                     
-                                        
+                                        <h3 class="text-uppercase">Em uma experiência de recrutamento, você é:</h3>
                                         <label for="designer">
                                             <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
                                             <input id="designer" minlength="6" type="radio" name="lead-alvo" value="designer" required />
@@ -75,12 +73,13 @@
                         <div class="conteudo-bloco-segundo  d-flex  justify-content-md-around m-4">
                             <div class="d-flex flex-md-column divx-50 m-5 form-nome-email">
     
-                                    <p class="title-perguntas text-center text-uppercase">Um pouco sobre você</p>
+                                    <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
         
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="nome" required>
-                                   
+                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Seu nome" required>
         
-                                    <input type="email" class="form-control" id="validationCustom01" placeholder="email@exemplo" required>
+                                    <input type="email" class="form-control" id="validationCustom01" placeholder="Seu e-mail" required>
+                                    <input type="email" class="form-control" id="validationCustom01" placeholder="Portfolio ou LinkedIn" >
+
                                     
                                 </div>
                                 <div class="divx-50">
@@ -95,24 +94,25 @@
                         <div class="container">
                                 <div class="d-flex justify-content-md-around m-4 conteudo-bloco-terceiro">
                                         <div class="divx-50">
-                                            <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
+                                            <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-aoponto.png" class="img-fluid" alt="Responsive image">
                 
                                         </div>
                                         <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
                 
-                                            <p class="title-perguntas text-center text-uppercase ">Agora vamos ao pricipal</p>
+                                            <h2 class="title-perguntas text-center text-uppercase ">Agora vamos ao pricipal</h2>
+                                            <p id="">Você já teve problemas com análises de competências?</p>
                 
                                             <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                                                    <label class="btn btn-success active">
-                                                      <input type="radio" name="options" id="option1" autocomplete="off" value="sim"> Sim
-                                                    </label>
-                                                    
-                                                    <label class="btn btn-success">
-                                                      <input type="radio" name="options" id="option2" autocomplete="off" value="nao"> Não
-                                                    </label>
-                                                  </div>
-                                                    <label for="exampleFormControlTextarea1"></label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                                <label class="btn btn-success active">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off" value="sim"> Sim
+                                                </label>
+                                                
+                                                <label class="btn btn-success">
+                                                    <input type="radio" name="options" id="option2" autocomplete="off" value="nao"> Não
+                                                </label>
+                                            </div>
+                                            <label for="exampleFormControlTextarea1"></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" name="Você já teve problemas com análises de competências?" rows="3" placeholder="Como você lidou com isso? (max. 500 caracteres)"></textarea>
                                             
                                         </div>
                                     </div>
