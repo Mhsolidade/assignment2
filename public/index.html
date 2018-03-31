@@ -41,7 +41,7 @@
             <div class="">
                 <form id="myForm" 
                 class="form-group border border-warning" 
-                onsubmit="contatoController.adiciona(event)" 
+                onsubmit="leadController.adiciona(event)" 
                 >
                     <div class="m-4">
                         
@@ -55,11 +55,11 @@
                                         
                                         <label for="designer">
                                             <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
-                                            <input id="designer" minlength="6" type="radio" name="lead-alvo" value="designer" required />
+                                            <input id="designer" minlength="6" type="radio" name="lead-alvo" value="B2C" required />
                                         </img>
                                         </label>
                                     
-                                        <input id="recruta" type="radio" name="lead-alvo" value="recruta" required />
+                                        <input id="recruta" type="radio" name="lead-alvo" value="B2B" required />
                                         <label for="recruta">
                                             <img class="rounded btn-img-size" alt="botao recruta" src="./images/recruta.png">
                                         </label>
@@ -178,6 +178,7 @@
     <script src="./js/services/helper.service.js"></script>
     <script src="./js/services/lead.service.js"></script>
     <script src="./js/models/lead.model.js"></script>
+    
     <script src="./js/controllers/ContatoController.js"></script>
 
     <script>

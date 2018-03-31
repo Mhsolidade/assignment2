@@ -1,14 +1,13 @@
 class HelperService {
 
     constructor() {
-        throw new Error("Class não pode ser instanciada.");
+        throw new Error("Class nao pode ser instanciada.");
     }
 
     static get ip() {
         let http = new XMLHttpRequest;
 
-
-        http.open("get", "http://api.ipify.org/?format=jsonp&callback", false);
+        http.open("get", "https://api.ipify.org/?format=jsonp&callback", false);
 
         http.send();
         let ip = http.responseText.split('"')[3];
