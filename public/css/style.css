@@ -13,7 +13,7 @@
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     grid-template-rows: repeat(2,1fr);
 
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 
 }
@@ -151,25 +151,32 @@ footer{
 @media( max-width: 768px){
     .grid-imag{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
     grid-template-rows: repeat(2,1fr);
 
+  
+    
     height: 100vh;
  
 }
+/*
 .img-background{
-    grid-column-start: 1;
+    grid-column: 1/;
     grid-row: 1/5;
     z-index: -1;
 }
+*/
 .header-conteudo{
-    grid-column-start: 1;
-    grid-row: 1/3;
+/*    grid-column-start: 1;*/
+/*    grid-row: 1/3;*/
+    text-align: justify;
+    letter-spacing: 0.3
+    
 
 }
 
 .header-conteudo h1{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
     
 /*    ______________________*/
