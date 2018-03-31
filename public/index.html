@@ -3,15 +3,27 @@
 
 <head>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116666405-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-116666405-1');
     </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5BLKTPF');</script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -29,8 +41,8 @@
 <body>
 
     <header class="grid-imag">
-            <div class="img-background"></div>
-        
+        <div class="img-background"></div>
+
         <div class="container header-conteudo">
 
             <div class="row">
@@ -48,111 +60,108 @@
 
 
     <main id="main">
-        
-            <div class="">
-                <form id="myForm" 
-                class="form-group border border-warning" 
-                onsubmit="leadController.adiciona(event)" 
-                >
-                    <div class="m-4">
-                        
-                        <div class="primeiro-bloco">
-                            <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio modi aspernatur, neque laboriosam
-                                eaque.
-                            </p>
-                            <div class="d-flex justify-content-around ">
-                                    <div id="select-btn" class="conteudo-bloco-primeiro form-publico-alvo">
-                                    
-                                        
-                                        <label for="designer">
-                                            <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
-                                            <input id="designer" minlength="6" type="radio" name="lead-alvo" value="B2C" required />
-                                        </img>
-                                        </label>
-                                    
-                                        <input id="recruta" type="radio" name="lead-alvo" value="B2B" required />
-                                        <label for="recruta">
-                                            <img class="rounded btn-img-size" alt="botao recruta" src="./images/recruta.png">
-                                        </label>
-                                    
-                                    </div>
+
+        <div class="">
+            <form id="myForm" class="form-group border border-warning" onsubmit="leadController.adiciona(event)">
+                <div class="m-4">
+
+                    <div class="primeiro-bloco">
+                        <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio modi aspernatur, neque laboriosam
+                            eaque.
+                        </p>
+                        <div class="d-flex justify-content-around ">
+                            <div id="select-btn" class="conteudo-bloco-primeiro form-publico-alvo">
+
+
+                                <label for="designer">
+                                    <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
+                                    <input id="designer" minlength="6" type="radio" name="lead-alvo" value="B2C" required />
+                                    </img>
+                                </label>
+
+                                <input id="recruta" type="radio" name="lead-alvo" value="B2B" required />
+                                <label for="recruta">
+                                    <img class="rounded btn-img-size" alt="botao recruta" src="./images/recruta.png">
+                                </label>
+
                             </div>
                         </div>
-                    
                     </div>
 
-                    <div class="segundo-bloco" >
-                        <div class="container" >
+                </div>
+
+                <div class="segundo-bloco">
+                    <div class="container">
                         <div class="conteudo-bloco-segundo  d-flex  justify-content-md-around m-4">
                             <div class="d-flex flex-md-column divx-50 m-5 form-nome-email">
-    
-                                    <p class="title-perguntas text-center text-uppercase">Um pouco sobre você</p>
-        
-                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="nome" required>
-                                   
-        
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo" required>
-                                    
-                                </div>
-                                <div class="divx-50">
-                                    <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
-        
-                                </div>
+
+                                <p class="title-perguntas text-center text-uppercase">Um pouco sobre você</p>
+
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="nome" required>
+
+
+                                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo" required>
+
+                            </div>
+                            <div class="divx-50">
+                                <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
+
                             </div>
                         </div>
+                    </div>
+
+                </div>
+                <div class="terceiro-bloco">
+                    <div class="container">
+                        <div class="d-flex justify-content-md-around m-4 conteudo-bloco-terceiro">
+                            <div class="divx-50">
+                                <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
+
+                            </div>
+                            <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
+
+                                <p class="title-perguntas text-center text-uppercase ">Agora vamos ao pricipal</p>
+
+                                <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" value="sim"> Sim
+                                    </label>
+
+                                    <label class="btn btn-success">
+                                        <input type="radio" name="options" id="option2" autocomplete="off" value="nao"> Não
+                                    </label>
+                                </div>
+                                <label for="exampleFormControlTextarea1"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quarto-bloco ">
+                    <div class="container">
+                        <div class="d-flex flex-column justify-content-md-center m-4 conteudo-bloco-quarto">
+                            <h1 class="title-perguntas text-uppercase titulo">qual seria a solução ideal?</h1>
+
+                            <label for="exampleFormControlTextarea1"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        </div>
+
 
                     </div>
-                    <div class="terceiro-bloco">
-                        <div class="container">
-                                <div class="d-flex justify-content-md-around m-4 conteudo-bloco-terceiro">
-                                        <div class="divx-50">
-                                            <img class=" img-fluid img-thumbnai rounded img-body" src="./images/img-lapis.jpg" class="img-fluid" alt="Responsive image">
-                
-                                        </div>
-                                        <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
-                
-                                            <p class="title-perguntas text-center text-uppercase ">Agora vamos ao pricipal</p>
-                
-                                            <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                                                    <label class="btn btn-success active">
-                                                      <input type="radio" name="options" id="option1" autocomplete="off" value="sim"> Sim
-                                                    </label>
-                                                    
-                                                    <label class="btn btn-success">
-                                                      <input type="radio" name="options" id="option2" autocomplete="off" value="nao"> Não
-                                                    </label>
-                                                  </div>
-                                                    <label for="exampleFormControlTextarea1"></label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quarto-bloco ">
-                                <div class="container">
-                                    <div class="d-flex flex-column justify-content-md-center m-4 conteudo-bloco-quarto" >
-                                        <h1 class="title-perguntas text-uppercase titulo">qual seria a solução ideal?</h1>
-                                        
-                                            <label for="exampleFormControlTextarea1"></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                                        </div>
-                                    
-                                    
-                                </div>
-                                <div class="d-flex justify-content-md-center">
-                                    <input class="btn btn-success btn-center" type="submit" value="Submit">
+                    <div class="d-flex justify-content-md-center">
+                        <input class="btn btn-success btn-center" type="submit" value="Submit">
 
-                                </div>
-                            </div>
-                            
-                       
+                    </div>
+                </div>
+
+
 
             </form>
 
 
-            </div>
-        
+        </div>
+
     </main>
 
     <footer>
@@ -185,20 +194,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    
+
     <script src="./js/services/helper.service.js"></script>
     <script src="./js/services/lead.service.js"></script>
     <script src="./js/models/lead.model.js"></script>
-    
+
     <script src="./js/controllers/ContatoController.js"></script>
 
     <script>
         let leadController = new LeadController();
 
-       $('#select-btn label').click(function () {
+        $('#select-btn label').click(function () {
             $(this).addClass('selected').siblings().removeClass('selected');
         });
-       
+
     </script>
 
 
