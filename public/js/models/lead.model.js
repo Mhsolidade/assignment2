@@ -5,7 +5,7 @@ class LeadModel {
     this.social = social;
     this.ip = HelperService.ip;
     this.tipo = tipo;
-    this.data = HelperService.data;
+    this.data_hora = HelperService.data;
     this.respostas = this._requestResponse;
   }
 
