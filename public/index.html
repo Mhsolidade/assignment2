@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-        <script src="https://use.fontawesome.com/6646465b93.js"></script>
+<script src="https://use.fontawesome.com/6646465b93.js"></script>
+
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -42,11 +43,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./motion/motion-ui.min.css">
+
+         <!-- anime text -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/validator.css">
@@ -58,7 +61,7 @@
 
 
 <body>
-        
+
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BLKTPF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -70,10 +73,10 @@
 
         <div class="header-conteudo d-flex flex-column justify-content-center align-items-center">
 
-            <h1 class="font-weight-bold  text-uppercase">Quais dificuldades o RH e os Designers encontram na hora testar suas habilidades?</h1>
-            <p class="lead  ">Na hora da seleção nem sempre é possível validar as habilidades técnicas. Por isso, queremos entender como melhorar
+            <h1 class="animated bounceInLeft font-weight-bold  text-uppercase">Quais dificuldades o RH e os Designers encontram na hora testar suas habilidades?</h1>
+            <p class="animated fadeInLeftBig lead">Na hora da seleção nem sempre é possível validar as habilidades técnicas. Por isso, queremos entender como melhorar
                 esse processo.</p>
-            <a href="#segundo" class=" btn btn-primary" type="" value="Responde agora">Participe agora!</a>
+            <a href="#segundo" class="animated fadeInRight btn btn-primary" type="" value="Responde agora">Participe agora!</a>
 
         </div>
     </header>
@@ -129,9 +132,9 @@
                         <div class="input-email">
                             <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
                         </div>
-                        <div class="input-social">
+                        <!-- <div class="input-social">
                             <input type="text" class="form-control" id="social" placeholder="Portfolio ou LinkedIn">
-                        </div>
+                        </div> -->
                     </div>
 
                     <img class="form-leads-img img-fluid img-thumbnai " src="./images/Imagem-SobreVoce.jpg" alt="Responsive image">
@@ -200,16 +203,22 @@
         </form>
 
     </main>
-    <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
 
 
 
     <footer>
         @copyright 2018
+        <div data-toggler data-animate="fade-in fade-out" class="callout secondary">
+            <p>This panel fades.</p>
+        </div>
+
+        <div data-toggler data-animate="slide-in-down slide-out-up" class="callout secondary">
+            <p>This panel slides.</p>
+        </div>
     </footer>
 
 
-   
+
 
     <!-- update the version number as needed -->
     <script src="https://gamaassigment2.firebaseapp.com/__/firebase/4.12.0/firebase-app.js"></script>
@@ -232,7 +241,7 @@
         crossorigin="anonymous"></script>
 
     <script src="./motion/motion-ui.min.js"></script>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 
     <script src="./js/services/helper.service.js"></script>
     <script src="./js/services/lead.service.js"></script>
@@ -263,7 +272,7 @@
     </script>
 
 
-    
+
     <!-- Modal -->
     <div class="modal fade" id="obrigado" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -276,13 +285,13 @@
                 </div>
                 <div class="modal-body">
                     <p>Agradecemos pela ajuda em nossa pesquisa, aguarde novidades!
-                    </br>   
+                        </br>
                         <a href="https://web.facebook.com/sharer.php?u=http%3A%2F%2Fwww.designermatch.com.br" class="btn btn-lg btn-social btn-facebook">
-                                <i class="fa fa-facebook fa-fw"></i> Shared on Facebook
-                            </a>
-                            <a href="https://twitter.com/intent/tweet?text=www.designermatch.com.br" class="btn btn-lg btn-social btn-twitter">
-                                <i class="fa fa-twitter fa-fw"></i> Share on Twitter
-                            </a>
+                            <i class="fa fa-facebook fa-fw"></i> Shared on Facebook
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=www.designermatch.com.br" class="btn btn-lg btn-social btn-twitter">
+                            <i class="fa fa-twitter fa-fw"></i> Share on Twitter
+                        </a>
                 </div>
             </div>
         </div>
