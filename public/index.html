@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+        <script src="https://use.fontawesome.com/6646465b93.js"></script>
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -42,7 +42,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./motion/motion-ui.min.css">
@@ -50,13 +51,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/validator.css">
     <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/btn.social.css">
 
     <title>Designer Match</title>
 </head>
 
 
 <body>
-
+        
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BLKTPF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -179,7 +181,7 @@
             <div class="quarto-bloco ">
                 <div class="container">
                     <div class="d-flex flex-column justify-content-md-center m-4 conteudo-bloco-quarto">
-                        <h1 class="title-perguntas text-uppercase titulo">qual seria a solução ideal?</h1>
+                        <h1 class="title-perguntas text-uppercase titulo">Qual seria a solução ideal?</h1>
 
                         <label for="solucao"></label>
                         <textarea class="form-control" id="solucao" rows="3" placeholder="(max. 500 caracteres)" maxlength="500"></textarea>
@@ -203,12 +205,11 @@
 
 
     <footer>
-        @copyright 2018 
- 
+        @copyright 2018
     </footer>
 
 
-
+   
 
     <!-- update the version number as needed -->
     <script src="https://gamaassigment2.firebaseapp.com/__/firebase/4.12.0/firebase-app.js"></script>
@@ -244,7 +245,7 @@
             e.preventDefault();
         });
         let leadController = new LeadController();
-        HelperService.scrollSlow();
+        // HelperService.scrollSlow();
 
         $('#select-btn label').click(function () {
             $(this).addClass('selected').siblings().removeClass('selected');
@@ -261,7 +262,7 @@
 
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     
     <!-- Modal -->
     <div class="modal fade" id="obrigado" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -275,7 +276,13 @@
                 </div>
                 <div class="modal-body">
                     <p>Agradecemos pela ajuda em nossa pesquisa, aguarde novidades!
-
+                    </br>   
+                        <a href="https://web.facebook.com/sharer.php?u=http%3A%2F%2Fwww.designermatch.com.br" class="btn btn-lg btn-social btn-facebook">
+                                <i class="fa fa-facebook fa-fw"></i> Shared on Facebook
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text=www.designermatch.com.br" class="btn btn-lg btn-social btn-twitter">
+                                <i class="fa fa-twitter fa-fw"></i> Share on Twitter
+                            </a>
                 </div>
             </div>
         </div>
@@ -283,6 +290,7 @@
 
 
 </body>
+
 
 
 </html>
