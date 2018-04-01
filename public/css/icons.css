@@ -1,0 +1,72 @@
+.input-nome, .select-icon, .input-email, .input-social {
+    position: relative;
+}
+
+input[type=text], input[type=email], select  {
+    padding-left:32px !important;
+    color: green;
+}
+
+
+.input-nome:before {
+    content:'';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_black_18px.svg);
+    background-position: 0 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+    color: green;
+}
+
+
+.input-email:before {
+    content:'';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_email_black_18px.svg);
+    background-position: 0 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+}
+
+
+.input-social:before {
+    content:'';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_record_voice_over_black_18px.svg);
+    background-position: 0 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+}
+
+
+
+
+
+.select-icon:before {
+    content:'';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_label_black_18px.svg);
+    background-position: 0 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+}

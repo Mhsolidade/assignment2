@@ -49,6 +49,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/validator.css">
+    <link rel="stylesheet" href="./css/icons.css">
 
     <title>Designer Match</title>
 </head>
@@ -125,14 +126,26 @@
 
                         <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
 
-                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
-                        <select class="form-control" id="lead-alvo" name="lead-alvo" required>
-                            <option value="">Designer ou recrutador?</option>
-                            <option value="B2C">Designer</option>
-                            <option value="B2B">recrutador</option>
-                        </select>
-                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
-                        <input type="text" class="form-control" id="social" placeholder="Portfolio ou LinkedIn">
+
+
+                        <div class="input-nome">
+
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="select-icon">
+                            <select class="form-control" id="lead-alvo" name="lead-alvo" required>
+                                <option value="">Designer ou recrutador?</option>
+                                <option value="B2C">Designer</option>
+                                <option value="B2B">recrutador</option>
+                            </select>
+                        </div>
+                        <div class="input-email">
+                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="input-social">
+                            <input type="text" class="form-control" id="social" placeholder="Portfolio ou LinkedIn">
+                        </div>
 
 
                     </div>
