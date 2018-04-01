@@ -1,3 +1,30 @@
+.placeholder{color: #6C757D;}
+select option:first-child{color: #6C757D; display: none;}
+select option{color: #6C757D;}
+
+input#node{
+    background-image:url();
+    background-repeat:no-repeat;
+    background-position:6px;
+    border:1px solid #DADADA;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:35px;
+    width:310px;
+    height:30px;
+    font-size:14px;
+    box-shadow:0 0 10px;
+    -webkit-box-shadow:0 0 10px;
+    /* For I.E */
+    -moz-box-shadow:0 0 10px;
+    /* For Mozilla Web Browser */
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    /* For I.E */
+    -moz-border-radius:5px
+    /* For Mozilla Web Browser */
+    }
+
 .grid-imag{
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
@@ -65,6 +92,10 @@
     align-items: center;
 }
 
+input, select{
+    border-radius: 1rem !important;
+    margin-bottom: 2px;
+}
 
 input[type=checkbox], input[type=radio] {
     opacity: 0;
@@ -262,3 +293,5 @@ footer{
     }
 
 }
+
+

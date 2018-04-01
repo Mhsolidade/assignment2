@@ -12,14 +12,14 @@ class LeadModel {
   get _requestResponse() {
 
     const rq = {};
-    let resp;
-    // $('input[name=lead-alvo]:checked', '#myForm').val()
-    const op = $('#opcao label.active input').val();   //$('input[name="problema"]:checked', "#myForm").val();
-    const comoLidar = $("#comoLidar").val();
+    // let resp;
+    // // $('input[name=lead-alvo]:checked', '#myForm').val()
+    // const op = $('#opcao label.active input').val();   //$('input[name="problema"]:checked', "#myForm").val();
+    // const comoLidar = $("#comoLidar").val();
 
-    op == 'Sim' ?  resp = `${op}, ${comoLidar}` : resp = `${op}`;
-    rq['Você já teve problema com análise de competências técnicas em um processo seletivo?'] = resp;
-    rq['qual seria a solução ideal'] = $("#solucao").val();
+    // op == 'Sim' ?  resp = `${op}, ${comoLidar}` : resp = `${op}`;
+    rq['Você já teve problema(s) com análises de competências técnicas?'] =  $("#problema").val();
+    rq['Como você lidou ou lida com isso?'] = $("#solucao").val();
 ;
     return rq;
   }
