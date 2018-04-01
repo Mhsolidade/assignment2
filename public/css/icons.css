@@ -4,7 +4,6 @@
 
 input[type=text], input[type=email], select  {
     padding-left:32px !important;
-    color: green;
 }
 
 
@@ -20,7 +19,6 @@ input[type=text], input[type=email], select  {
     left:8px;
     opacity: .5;
     z-index: 1000;
-    color: green;
 }
 
 
