@@ -12,7 +12,6 @@ class LeadController {
 
         let nome = $('#nome').val();
         let email = $('#email').val();
-        let social = $('#social').val();
         let tipo = $('#lead-alvo').val(); //$('input[name=lead-alvo]:checked', '#myForm').val();
         let lead = new LeadModel(nome, email, tipo);
         this.leadService.create(lead);

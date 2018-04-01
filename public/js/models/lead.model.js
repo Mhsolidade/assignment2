@@ -1,5 +1,5 @@
 class LeadModel {
-  constructor(nome, email, social, tipo) {
+  constructor(nome, email, tipo) {
     this.email = email;
     this.nome = nome;
     this.ip = HelperService.ip;
