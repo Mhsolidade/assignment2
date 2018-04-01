@@ -1,8 +1,7 @@
 class LeadModel {
-  constructor(nome, email, social, tipo) {
+  constructor(nome, email, tipo) {
     this.email = email;
     this.nome = nome;
-    this.social = social;
     this.ip = HelperService.ip;
     this.tipo = tipo;
     this.data_hora = HelperService.data;
@@ -20,8 +19,8 @@ class LeadModel {
     // op == 'Sim' ?  resp = `${op}, ${comoLidar}` : resp = `${op}`;
     rq['Você já teve problema(s) com análises de competências técnicas?'] =  $("#problema").val();
     rq['Como você lidou ou lida com isso?'] = $("#comoLidar").val();
-    rq['Qual seria a solução ideal?'] = $('#solucao').val();
-    
+    rq['Qual seria a solução ideal?'] = $("#solucao").val();
+
 ;
     return rq;
   }
