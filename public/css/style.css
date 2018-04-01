@@ -64,8 +64,7 @@ input#node{
     grid-template-columns: 0.5fr 0.6fr minmax(120px, 1fr) 0.5fr;
     grid-template-rows:  0.1fr 1fr 0.1fr;
     grid-gap: 1rem;
-    /* height: 0vh; */
-
+    
 }
 
 
@@ -128,14 +127,6 @@ input[type=checkbox], input[type=radio] {
 }
 
 
-.img-size-default {
-    width: 368px !important;
-    height: 210px !important;
-}
-
-
-
-
 footer{
     text-align: center;
  
@@ -166,30 +157,8 @@ footer{
     .header-conteudo h1{
         font-size: 1.3rem;
     }
-    .grid-form-leads{
-        display: grid;
-        grid-template-columns: 0.5fr 0.6fr minmax(120px, 1fr) 0.5fr;
-        grid-template-rows:  0.1fr 1fr 0.1fr;
-        grid-gap: 1rem;
-        /* height: 0vh; */
-    
-    }
     
     
-    .form-nome-email{
-        grid-column: 2/2;
-        grid-row: 2/2;
-        align-self: center;
-    }
-    
-    .form-leads-img{
-        grid-column: 3/4;
-        grid-row: 2/2;
-        width: 100%;
-        margin-left: 3rem;
-    }
-
-
 
  }
 /*____________________________________________________________________*/
@@ -212,15 +181,46 @@ footer{
     z-index: -1;
 }
 */
-.header-conteudo{
-  letter-spacing: 0.3
-    
+    .header-conteudo{
+        letter-spacing: 0.3
+        
 
-}
+    }
 
-.header-conteudo h1{
-    font-size: 1.5rem;
-}
+    .header-conteudo h1{
+        font-size: 1.5rem;
+    }
+
+    .grid-form-leads{
+        display: grid;
+        grid-template-columns: 0.5fr  1fr 0.5fr;
+        grid-template-rows:  0.1fr 1fr 0.1fr;
+        grid-gap: 1rem;
+        
+        
+    }
+
+
+    .form-nome-email{
+        grid-column: 2/2;
+        grid-row: 2/2;
+        align-self: center;
+    }
+
+    .form-leads-img{
+        z-index: -1;
+        grid-column: 1/4;
+        grid-row: 2/2;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .title-perguntas {
+        color: rgba(12, 4, 4, 0.693);
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+
     
 /*    ______________________*/
     
@@ -254,7 +254,7 @@ footer{
         align-items: center;
         margin: 0px;
     }
-    .conteudo-bloco-preimeiro, .conteudo-bloco-segundo, .conteudo-bloco-terceiro, .conteudo-bloco-quarto {
+    .conteudo-bloco-preimeiro, .conteudo-bloco-terceiro, .conteudo-bloco-quarto {
         display: flex;
         flex-direction: column;
         align-items: center;
