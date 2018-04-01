@@ -79,7 +79,6 @@
     <main id="main">
 
 
-        <div class="">
             <form id="myForm" class="form-group" onsubmit="leadController.adiciona(event)">
                 <div class="primeiro-bloco m-4">
 
@@ -115,12 +114,11 @@
         </div>
 
         <div class="segundo-bloco">
-            <div class="container">
-                <div class="conteudo-bloco-segundo  d-flex justify-content-md-around m-4">
-                    <div class="d-flex flex-md-column divx-50 m-5 form-nome-email">
-
-                        <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
-
+                <div class="grid-form-leads  conteudo-bloco-segundo">
+            
+                    
+                    <div class=" form-nome-email">
+                            <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
                         <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
                         <select class="form-control" id="lead-alvo" name="lead-alvo">
                             <option>Designer ou recrutador?</option>
@@ -130,19 +128,13 @@
                         <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
                         <input type="text" class="form-control" id="social" placeholder="Portfolio ou LinkedIn">
 
-
-                    </div>
-                    <div class="divx-50">
-                        <img class="img-size-default img-fluid img-thumbnai rounded img-responsive" src="./images/Imagem-SobreVoce.jpg" alt="Responsive image">
-
                     </div>
 
-
-
+                    
+                        <img class="form-leads-img img-fluid img-thumbnai " src="./images/Imagem-SobreVoce.jpg" alt="Responsive image">
+                    
 
                 </div>
-
-            </div>
         </div>
 
         <div class="terceiro-bloco">
@@ -155,8 +147,6 @@
                     <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
 
                         <h2 class="title-perguntas text-center text-uppercase ">Agora vamos ao principal</h2>
-                        <p>Você já teve problema com análise de competências técnicas em um processo seletivo?</p>
-
 <!--
                         <div id="opcao" class="btn-group btn-group-toggle " data-toggle="buttons">
                             <label for="sim" class="btn btn-success ">
@@ -203,9 +193,6 @@
 
 
         </form>
-
-
-        </div>
 
     </main>
 
