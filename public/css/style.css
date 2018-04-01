@@ -1,8 +1,8 @@
 
 
-.placeholder{color: grey;}
-select option:first-child{color: grey; display: none;}
-select option{color: #555;}
+.placeholder{color: #6C757D;}
+select option:first-child{color: #6C757D; display: none;}
+select option{color: #6C757D;}
 
 input#node{
     background-image:url();
