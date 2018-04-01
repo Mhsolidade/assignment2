@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Mhsolidade/assignment2#readme",
   "dependencies": {
     "json2csv": "^4.0.2",
+    "motion-ui": "^1.2.3",
     "request": "^2.85.0"
   }
 }
