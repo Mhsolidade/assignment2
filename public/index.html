@@ -68,14 +68,10 @@
         <div class="header-conteudo d-flex flex-column justify-content-center align-items-center">
           
             <h1 class="font-weight-bold  text-uppercase">Quais dificuldades o RH e os Designers encontram na hora testar suas habilidades?</h1>
-            <p class="lead  ">Na hora da seleção nem sempre é possível validar as habilidades técnicas. Por isso, queremos entender como melhorar esse processo.
-            </p>
-            <button class=" btn" type="" value="Responde agora">Faça a sua parte</button>
-
-        </div>
-            
+            <p class="lead  ">Na hora da seleção nem sempre é possível validar as habilidades técnicas. Por isso, queremos entender como melhorar esse processo.</p>
+            <button class=" btn" type="" value="Responde agora">Participe agora!</button>
         
-
+        </div> 
     </header>
 
 
@@ -89,10 +85,15 @@
 
 
                     <div class="conteudo-bloco-primeiro">
-                        <div id="select-btn" class="d-flex flex-column">
+                        <div id="select-btn" class="text-center">
 
-                            <h3 class=" mx-auto text-uppercase">Em uma experiência de recrutamento, você é:</h3>
-                            <div id="btn-lead" class=" d-flex justify-content-center">
+                            <h3 class=" mx-auto text-uppercase">Como você pode ajudar?</h3>
+                            <p>Essa pesquisa tem como objetivo, entender os principais desafios no momento de selecionar um Designer.
+                                 Em um processo seletivo tradicional, não é possível realizar e analisar testes de habilidades de forma prática desses profissionais. 
+                                 Por isso, compreender os principais desafios é importante para unir o candidato ideal com a vaga certa. 
+                            </p>
+                                <p><strong>Participe agora da nossa pesquisa! </strong></p> 
+                            <!-- <div id="btn-lead" class=" d-flex justify-content-center">
                                 <label for="designer">
                                     <img class="rounded btn-img-size" alt="botao designer" src="./images/designer.png">
                                     <input id="designer" type="radio" name="lead-alvo" value="B2C" required />
@@ -103,7 +104,7 @@
                                 <label for="recruta">
                                     <img class="rounded btn-img-size" alt="botao recruta" src="./images/recruta.png">
                                 </label>
-                            </div>
+                            </div> -->
 
                         </div>
 
@@ -121,7 +122,11 @@
                         <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
 
                         <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
-
+                        <select class="form-control" id="lead-alvo" name="lead-alvo">
+                            <option>Designer ou recrutador?</option>
+                            <option value="B2C">Designer</option>
+                            <option value="B2B">recrutador</option>
+                        </select>
                         <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
                         <input type="text" class="form-control" id="social" placeholder="Portfolio ou LinkedIn">
 
