@@ -73,7 +73,7 @@
 
         <div class="header-conteudo d-flex flex-column justify-content-center align-items-center">
 
-            <h1 class="animated bounceInLeft font-weight-bold  text-uppercase">Quais dificuldades o RH e os Designers encontram na hora testar suas habilidades?</h1>
+            <h1 class="animated bounceInLeft font-weight-bold  text-uppercase">QUAIS DIFICULDADES O RH E OS DESIGNERS ENCONTRAM NA HORA DE TESTAR SUAS HABILIDADES?</h1>
             <p class="animated fadeInLeftBig lead">Na hora da seleção nem sempre é possível validar as habilidades técnicas. Por isso, queremos entender como melhorar
                 esse processo.</p>
             <a href="#segundo" class="animated fadeInRight btn btn-primary" type="" value="Responde agora">Participe agora!</a>
@@ -87,20 +87,20 @@
 
 
         <form id="myForm" class="form-group" onsubmit="leadController.adiciona(event)">
-            <div class="primeiro-bloco m-4">
+            <div class="primeiro-bloco m-5 p-2">
 
 
                 <div id="segundo" class="conteudo-bloco-primeiro">
-                    <div id="select-btn" class="text-center">
+                    <div id="select-btn" class="text-center container">
 
-                        <h3 class=" mx-auto text-uppercase">Como você pode ajudar?</h3>
+                        <!-- <h3 class=" mx-auto text-uppercase">Como você pode ajudar?</h3> -->
                         <p>Essa pesquisa tem como objetivo, entender os principais desafios no momento de selecionar um Designer.
                             Em um processo seletivo tradicional, não é possível realizar e analisar testes de habilidades
                             de forma prática desses profissionais. Por isso, compreender os principais desafios é importante
                             para unir o candidato ideal com a vaga certa.
                         </p>
                         <p>
-                            <strong>Participe agora da nossa pesquisa! </strong>
+                            <!-- <strong>Participe agora da nossa pesquisa! </strong> -->
                         </p>
 
                     </div>
@@ -153,6 +153,7 @@
                         <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
 
                             <h2 class="title-perguntas text-center text-uppercase ">Agora vamos ao principal</h2>
+                            <small class="mb-4">Nos ajude a melhorar sua experiência com o recrutamento empresarial</small>
                             <!--
                         <div id="opcao" class="btn-group btn-group-toggle " data-toggle="buttons">
                             <label for="sim" class="btn btn-success ">
@@ -166,11 +167,11 @@
 -->
                             <label for="problema">Você já teve problema(s) com análises de competências técnicas?</label>
                             <textarea class="form-control" id="problema" name="problema" rows="1" placeholder="Qual problema? (max. 200 caracteres)"
-                                maxlength="500"></textarea>
+                                maxlength="500" required></textarea>
 
                             <label for="comoLidar" class="text-left">Como você lidou ou lida com isso?</label>
                             <textarea class="form-control" id="comoLidar" name="comoLidar" rows="3" placeholder="Conte para nós. (max. 500 caracteres)"
-                                maxlength="500"></textarea>
+                                maxlength="500" required></textarea>
 
 
                         </div>
@@ -187,7 +188,7 @@
                         <h1 class="title-perguntas text-uppercase titulo">Qual seria a solução ideal?</h1>
 
                         <label for="solucao"></label>
-                        <textarea class="form-control" id="solucao" rows="3" placeholder="(max. 500 caracteres)" maxlength="500"></textarea>
+                        <textarea class="form-control" id="solucao" rows="3" placeholder="(max. 500 caracteres)" maxlength="500" required></textarea>
                     </div>
 
 
