@@ -4,29 +4,43 @@ const fs = require('fs');
 const path = require('path');
 
 
+
 const fields = ['email', 'nome', 'ip', 'tipo', 'data_hora'];
 
+const file = path.dirname(__dirname) + "/leads.csv";
+const URL = "https://gamaassigment2.firebaseio.com/lista/leads.json";
+
+function get(url) {
+    return new Promise((result, reject) => {
+        request.get(url, ((error, response, body) => {
+            return error ? reject(error) : result(JSON.parse(body));
+        }));
+    });
+}
 
 
-async function generetorCsv() {
-    console.log('dir')
-    console.log(path.dirname(__dirname))
-  request.get("https://gamaassigment2.firebaseio.com/lista/leads.json", function (error, response, body) {  
-            const dados = JSON.parse(body);
+
+function generetorCsv() {
+
+   
+
+        get(URL).then(dados => {;
             const json = Object.keys(dados).map(id => dados[id]);
-    
+
             const json2csvParser = new Json2csvParser({ fields });
             const csv = json2csvParser.parse(json);
-            try {
-                fs.unlinkSync(path.dirname(__dirname) + "/leads.csv");
-                
-            } catch (error) {
-                
-            }
-            fs.writeFileSync(path.dirname(__dirname) + "/leads.csv", csv, "utf8" );
-            console.log(`Seu arquivo foi salvo no diretorio ${path.dirname(__dirname) +"/leads.csv"}` );
-    });
 
+            // remove file
+            try {
+                fs.unlinkSync(file);
+            } catch (error) {}
+
+            fs.writeFileSync(file, csv, "utf8");
+            console.log(`Seu arquivo foi salvo no diretorio ${file}`);
+        }).catch( error => {
+            console.log(`Um erro ocorreu: ${error}`);
+        });
 }
 
 generetorCsv();
+
