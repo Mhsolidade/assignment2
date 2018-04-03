@@ -2,6 +2,21 @@
 select option:first-child{color: #6C757D; display: none;}
 select option{color: #6C757D;}
 
+
+* {
+    font-family: 'Roboto Slab', serif !important; 
+}
+
+H1, H2, H3 {
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: bold !important;
+}
+
+input[type="submit"] {
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: bold !important;
+}
+
 input#node{
     background-image:url();
     background-repeat:no-repeat;

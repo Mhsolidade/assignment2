@@ -7,6 +7,10 @@ input[type=text], input[type=email], select  {
 }
 
 
+
+
+
+
 .input-nome:before {
     content:'';
     display: block;
