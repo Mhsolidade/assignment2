@@ -21,7 +21,6 @@ class LeadModel {
     rq['Como você lidou ou lida com isso?'] = $("#comoLidar").val().replace(/[\t\n]+/g,' ');
     rq['Qual seria a solução ideal?'] = $("#solucao").val().replace(/[\t\n]+/g,' ');
 
-;
     return rq;
   }
 
