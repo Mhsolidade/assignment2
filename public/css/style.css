@@ -155,6 +155,10 @@ footer{
      color: #fff !important;
  }
 
+ .btn-inicio {
+     margin-top: 10px;
+ }
+
  h5 {
      font-weight: bold;
  }
