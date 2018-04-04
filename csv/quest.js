@@ -5,6 +5,10 @@ const fs = require('fs');
 const path = require('path');
 
 var jsonexport = require('jsonexport');
+// {       label: 'some label', // (optional, column will be labeled 'path.to.something' if not defined)   
+//     value: 'path.to.something', // data.path.to.something    
+//    default: 'NULL' // default if value is not found (optional, overrides `defaultValue` for column)  
+//    },
 
 
 const file = path.dirname(__dirname) + "/quest.csv";
