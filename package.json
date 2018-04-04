@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "csv": "node ./csv/jsontocsv.js"
+    "csv": "node ./csv/jsontocsv.js",
+    "export-quest": "node ./csv/quest.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   "homepage": "https://github.com/Mhsolidade/assignment2#readme",
   "dependencies": {
     "json2csv": "^4.0.2",
-    "motion-ui": "^1.2.3",
+    "jsonexport": "^2.0.11",
     "request": "^2.85.0"
   }
 }
