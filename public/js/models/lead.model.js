@@ -17,9 +17,9 @@ class LeadModel {
     // const comoLidar = $("#comoLidar").val();
 
     // op == 'Sim' ?  resp = `${op}, ${comoLidar}` : resp = `${op}`;
-    rq['Você já teve problema(s) com análises de competências técnicas?'] =  $("#problema").val();
-    rq['Como você lidou ou lida com isso?'] = $("#comoLidar").val();
-    rq['Qual seria a solução ideal?'] = $("#solucao").val();
+    rq['Você já teve problema(s) com análises de competências técnicas?'] =  $("#problema").val().replace(/[\t\n]+/g,' ');
+    rq['Como você lidou ou lida com isso?'] = $("#comoLidar").val().replace(/[\t\n]+/g,' ');
+    rq['Qual seria a solução ideal?'] = $("#solucao").val().replace(/[\t\n]+/g,' ');
 
 ;
     return rq;
