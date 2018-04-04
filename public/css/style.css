@@ -3,6 +3,10 @@ select option:first-child{color: #6C757D; display: none;}
 select option{color: #6C757D;}
 
 
+.icon-font {
+    font-size: 2rem !important;
+}
+
 * {
     font-family: 'Roboto Slab', serif !important; 
 }
@@ -166,6 +170,12 @@ footer{
  .modal-send {
      background-color: #1C4360;
      text-align: center;
+     border: 0;
+     
+ }
+
+ .modal-open .modal {
+    background: rgb(65, 63, 63);
  }
 
  .modal-buttom {
