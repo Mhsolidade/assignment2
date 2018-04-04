@@ -17,11 +17,14 @@
 
     <!-- Google Tag Manager -->
     <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KRG57X9');
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KRG57X9');
     </script>
     <!-- End Google Tag Manager -->
 
@@ -71,11 +74,14 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto+Slab" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+  
+   
+    
 
     <!-- anime text -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/validator.css">
@@ -94,8 +100,9 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRG57X9"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRG57X9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="grid-imag">
@@ -215,8 +222,7 @@
             <div class="quarto-bloco ">
                 <div class="container">
                     <div class="d-flex flex-column justify-content-md-center m-4 conteudo-bloco-quarto">
-                        <h1 style="margin-top: 15px !important;"
-                        class="title-perguntas text-uppercase titulo">Qual seria a solução ideal?</h1>
+                        <h1 style="margin-top: 15px !important;" class="title-perguntas text-uppercase titulo">Qual seria a solução ideal?</h1>
 
                         <label for="solucao"></label>
                         <textarea class="form-control" id="solucao" rows="3" placeholder="(max. 500 caracteres)" maxlength="500" required></textarea>
@@ -266,7 +272,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="./motion/motion-ui.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 
     <script src="./js/services/helper.service.js"></script>
@@ -301,23 +307,28 @@
 
     <!-- Modal -->
     <div class="modal fade" id="obrigado" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered " role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Enviado com sucesso</h5>
+                <div class="modal-header modal-send">
+                    <h5 class="modal-title" id="exampleModalLongTitle">SUA RESPOSTA FOI ENVIADA!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <p>Agradecemos pela ajuda em nossa pesquisa, aguarde novidades!
+                <div class="modal-body modal-send">
+                    <p class="modal-text">Agradecemos pela ajuda em nossa pesquisa, aguarde novidades!
                         </br>
-                        <a href="https://web.facebook.com/sharer.php?u=http%3A%2F%2Fwww.designermatch.com.br" class="btn btn-lg btn-social btn-facebook">
-                            <i class="fa fa-facebook fa-fw"></i> Shared on Facebook
-                        </a>
-                        <a href="https://twitter.com/intent/tweet?text=www.designermatch.com.br" class="btn btn-lg btn-social btn-twitter">
-                            <i class="fa fa-twitter fa-fw"></i> Share on Twitter
-                        </a>
+                        <div>
+                            <img src="./images/send.PNG" alt="send" class="img-send">
+                        </div>
+                        <div class="modal-buttom">
+                            <a class="btn btn-lg btn-social btn-facebook face-buttom"  href="https://web.facebook.com/sharer.php?u=http%3A%2F%2Fwww.designermatch.com.br" >
+                                <i class="fa fa-facebook fa-fw"></i> Compartilhe no Facebook
+                            </a>
+                            <a class="btn btn-lg btn-social btn-twitter twitter-buttom" href="https://twitter.com/intent/tweet?text=www.designermatch.com.br" >
+                                <i class="far fa-user"></i> Compartilhe no Twitter
+                            </a>
+                        </div>
                 </div>
             </div>
         </div>
