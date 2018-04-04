@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/Mhsolidade/assignment2#readme",
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "json2csv": "^4.0.2",
     "jsonexport": "^2.0.11",
     "request": "^2.85.0"
