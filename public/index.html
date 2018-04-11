@@ -3,8 +3,6 @@
 
 <head>
 
-
-
     <!--JB Tracker-->
     <script type="text/javascript"> 
         var _paq = _paq || []; (function () {
@@ -27,9 +25,6 @@
         })(window, document, 'script', 'dataLayer', 'GTM-KRG57X9');
     </script>
     <!-- End Google Tag Manager -->
-
-
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116666405-1"></script>
@@ -73,17 +68,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto+Slab" rel="stylesheet">
 
-
-  
-   
-    
-
     <!-- anime text -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="./css/font-awesome.css">
+
+    <link rel="stylesheet" href="./css/font-awesome.css">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/validator.css">
@@ -107,148 +97,42 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="grid-imag">
-        <div class="img-background"></div>
+    <header class="">
+        <main id="">
+            <div id="banner">
+                <div class="container">
+                    <img src="images/Logo Designer Match_White.png" alt="Logo Designer Match" id="logo">
 
-        <div class="header-conteudo d-flex flex-column justify-content-center align-items-center">
+                    <div class="grid-form-leads  conteudo-bloco-segundo">
+                        <h1>Descubra o nível de suas habilidades como Designer em nosso desafio!</h1>
+                        <div class="form-nome-email">
 
-            <h1 class="animated bounceInLeft font-weight-bold  text-uppercase">QUAIS DIFICULDADES O RH E OS DESIGNERS ENCONTRAM NA HORA DE TESTAR SUAS HABILIDADES?</h1>
-            <p class="animated fadeInLeftBig lead">Na hora da seleção nem sempre é possível validar as habilidades técnicas. Por isso, queremos entender como melhorar
-                esse processo.</p>
-            <a href="#main" class="animated fadeInRight btn btn-primary btn-inicio" type="" value="Responde agora">Participe agora!</a>
+                            <p>Já se perguntou em qual nível de habilidade profissional você está atualmente? Participe do nosso desafio que vai testar o seu nível de conhecimento na área de Design e descubra a sua proficiência.</p>
 
-        </div>
+                            <p>Cadastre-se para participar:</p>
+
+                            <div class="input-nome">
+                                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required="">
+                            </div>
+
+                            <div class="input-email">
+                                <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required="">
+                            </div>
+
+                            <div>
+                                <input class="btn-enviar btn btn-center" type="submit" value="INICIAR TESTE!">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </header>
 
 
 
-    <main id="main">
-
-
-        <form id="myForm" class="form-group" onsubmit="leadController.adiciona(event)">
-            <div class="primeiro-bloco py-5">
-
-
-                <div id="segundo" class="conteudo-bloco-primeiro">
-                    <div id="select-btn" class="text-center container">
-
-                        <!-- <h3 class=" mx-auto text-uppercase">Como você pode ajudar?</h3> -->
-                        <p>Essa pesquisa tem como objetivo, entender os principais desafios no momento de selecionar um Designer.
-                            Em um processo seletivo tradicional, não é possível realizar e analisar testes de habilidades
-                            de forma prática desses profissionais. Por isso, compreender os principais desafios é importante
-                            para unir o candidato ideal com a vaga certa.
-                        </p>
-                        <p>
-                            <!-- <strong>Participe agora da nossa pesquisa! </strong> -->
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            </div>
-
-            <div class="segundo-bloco">
-                <div class="grid-form-leads  conteudo-bloco-segundo">
-
-
-                    <div class=" form-nome-email">
-                        <h3 class="title-perguntas text-center text-uppercase">Um pouco sobre você</h3>
-                        <div class="input-nome">
-
-                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
-                        </div>
-
-                        <div class="select-icon">
-                            <select class="form-control" id="lead-alvo" name="lead-alvo" required>
-                                <option value="">Designer ou recrutador?</option>
-                                <option value="B2C">Designer</option>
-                                <option value="B2B">Recrutador</option>
-                            </select>
-                        </div>
-                        <div class="input-email">
-                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
-                        </div>
-                        <!-- <div class="input-social">
-                            <input type="text" class="form-control" id="social" placeholder="Portfolio ou LinkedIn">
-                        </div> -->
-                    </div>
-
-                    <img class="form-leads-img img-fluid img-thumbnai " src="./images/Imagem-SobreVoce.jpg" alt="Responsive image">
-
-
-                </div>
-            </div>
-
-            <div class="terceiro-bloco">
-                <div class="container">
-                    <div class="d-flex justify-content-md-around m-4 conteudo-bloco-terceiro">
-                        <div class="divx-50">
-                            <img class=" img-fluid img-thumbnai rounded img-body" src="./images/problemas.jpg" class="img-fluid" alt="Responsive image">
-
-                        </div>
-                        <div class="d-flex flex-md-column divx-50 m-3 form-problemas">
-
-                            <h2 class="title-perguntas text-center text-uppercase ">Agora vamos ao principal</h2>
-                            <small class="mb-4">Nos ajude a melhorar sua experiência com o recrutamento empresarial</small>
-                            <!--
-                        <div id="opcao" class="btn-group btn-group-toggle " data-toggle="buttons">
-                            <label for="sim" class="btn btn-success ">
-                                <input type="radio" name="problema" id="sim" value="Sim" required> Sim
-                            </label>
-
-                            <label id="nao" class="btn btn-success">
-                                <input type="radio" name="problema" id="nao" value="Não"> Não
-                            </label>
-                        </div>
--->
-                            <label for="problema">Você já teve problema(s) com análises de competências técnicas?</label>
-                            <textarea class="form-control" id="problema" name="problema" rows="1" placeholder="Qual problema? (max. 200 caracteres)"
-                                maxlength="500" required></textarea>
-
-                            <label for="comoLidar" class="text-left">Como você lidou ou lida com isso?</label>
-                            <textarea class="form-control" id="comoLidar" name="comoLidar" rows="3" placeholder="Conte para nós. (max. 500 caracteres)"
-                                maxlength="500" required></textarea>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            </div>
-            </div>
-            </div>
-            <div class="quarto-bloco ">
-                <div class="container">
-                    <div class="d-flex flex-column justify-content-md-center m-4 conteudo-bloco-quarto">
-                        <h1 style="margin-top: 15px !important;" class="title-perguntas text-uppercase titulo">Qual seria a solução ideal?</h1>
-
-                        <label for="solucao"></label>
-                        <textarea class="form-control" id="solucao" rows="3" placeholder="(max. 500 caracteres)" maxlength="500" required></textarea>
-                    </div>
-
-
-                </div>
-                <div class="d-flex justify-content-md-center">
-                    <input class="btn-enviar btn btn-center" type="submit" value="Enviar">
-
-                </div>
-            </div>
-
-
-
-        </form>
-
-    </main>
-
-
-
     <footer>
-        @copyright 2018
-        <div data-toggler data-animate="fade-in fade-out" class="callout secondary">
+        &copy; 2018 Designer Match | Todos os direitos reservados
     </footer>
 
 
@@ -274,7 +158,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 
     <script src="./js/services/helper.service.js"></script>
@@ -324,10 +209,10 @@
                             <img src="./images/send.PNG" alt="send" class="img-send">
                         </div>
                         <div class="modal-buttom">
-                            <a class="btn btn-lg btn-social btn-facebook face-buttom"  href="https://web.facebook.com/sharer.php?u=http%3A%2F%2Fwww.designermatch.com.br" >
+                            <a class="btn btn-lg btn-social btn-facebook face-buttom" href="https://web.facebook.com/sharer.php?u=http%3A%2F%2Fwww.designermatch.com.br">
                                 <i class="icon-font fab fa-facebook-f" aria-hidden="true"></i> Compartilhe no Facebook
                             </a>
-                            <a class="btn btn-lg btn-social btn-twitter twitter-buttom" href="https://www.linkedin.com/cws/share?url=designermatch.com.br&original_referer=https%3A%2F%2Fdeveloper.linkedin.com%2Fetc%2Fdesigns%2Flinkedin%2Fkaty%2Fglobal%2Fclientlibs%2Fhtml%2Fsandbox.html%3Falign-class%3Dmiddle-center&token=&isFramed=true&lang=en_US&_ts=1522820370871.1462&xd_origin_host=https%3A%2F%2Fdeveloper.linkedin.com" >
+                            <a class="btn btn-lg btn-social btn-twitter twitter-buttom" href="https://www.linkedin.com/cws/share?url=designermatch.com.br&original_referer=https%3A%2F%2Fdeveloper.linkedin.com%2Fetc%2Fdesigns%2Flinkedin%2Fkaty%2Fglobal%2Fclientlibs%2Fhtml%2Fsandbox.html%3Falign-class%3Dmiddle-center&token=&isFramed=true&lang=en_US&_ts=1522820370871.1462&xd_origin_host=https%3A%2F%2Fdeveloper.linkedin.com">
                                 <i class="icon-font fab fa-linkedin-in" aria-hidden="true"></i> Compartilhe no Linkedin
                             </a>
                         </div>

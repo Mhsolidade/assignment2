@@ -1,0 +1,25 @@
+#banner {
+    background-image: url("../images/BG_LP_thankyou_page.jpg");
+    background-size: cover;
+    padding-bottom: 20%;
+}
+
+
+#logo {
+    background-color: #2AE362;
+    padding: 30px;
+    padding-top: 80px;
+}
+
+#banner h1{
+    margin: 20px 0px -30px 60px;
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
