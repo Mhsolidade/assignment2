@@ -1,8 +1,6 @@
 .section_left{
     min-height: 100%;
     position: fixed;
-    padding-left: 80px;
-    padding-left: 13%;
 }
 
 .section_right {
@@ -30,13 +28,20 @@
     font-size: 20px;
 }
 
+input{
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 50%;
+}
+
 #btn-baixar{
     font-family: 'Didact Gothic', sans-serif;
     background-color: #ffa00a;
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
+    margin-left: 40%;
     width: 30%;
-    margin-left: 18%;
 }
 
 
