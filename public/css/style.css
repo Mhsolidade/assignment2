@@ -61,8 +61,7 @@ input#node{
     background-image: url(../images/Topo.jpg);
    
     background-blend-mode: overlay;
-    background-position: center center;
-    background-size: cover;
+     background-size: cover;
     background-repeat: no-repeat;
     filter: opacity(85%) blur(2px);
     color: #fff;

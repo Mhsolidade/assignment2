@@ -46,6 +46,9 @@ input{
 
 
 .banner-fundo{
-    background-image: url("../images/LP_BG.png");    
-    
+    background-image: url("../images/LP_BG.png"); 
+      /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom
 }

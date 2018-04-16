@@ -7,6 +7,6 @@ class LeadService {
     async create(lead) {
 
         let novolead = Object.assign({}, lead);
-        this.db.ref().child("/lista/leads").push(novolead);
+        this.db.ref().child("/lista/leads3").push(novolead);
     }
 }

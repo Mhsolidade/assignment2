@@ -114,20 +114,23 @@
                 </h1>
 
                 <p class="subtitulo">Guia de bolso com os atalhos mais utilizados do Photoshop. Baixe agora e otimize o seu trabalho, dando mais tempo para sua criatividade fluir.</p>
+                <form id="myForm" action="" onsubmit="leadController.adiciona(event)">
+                    <div> 
+                        <input type="text" name="name" id="nome" placeholder="Nome" required>
+                    </div>
+    
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+    
+                    <div>
+                        <button type="submit" id="btn-baixar" class="btn btn-warning">
+                            Baixe Grátis
+                        </button>
+                    </div>
 
-                <div> 
-                    <input type="text" name="name" id="name" placeholder="Nome" required>
-                </div>
+                </form>
 
-                <div>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                </div>
-
-                <div>
-                    <button type="button" id="btn-baixar" class="btn btn-warning">
-                        Baixe Grátis
-                    </button>
-                </div>
             </div>
         </main>
     </header>

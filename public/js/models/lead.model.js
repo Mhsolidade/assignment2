@@ -1,11 +1,11 @@
 class LeadModel {
-  constructor(nome, email, tipo) {
+  constructor(nome, email) {
     this.email = email;
     this.nome = nome;
     this.ip = HelperService.ip;
-    this.tipo = tipo;
+    // this.tipo = tipo;
     this.data_hora = HelperService.data;
-    this.respostas = this._requestResponse;
+    // this.respostas = this._requestResponse;
   }
 
   get _requestResponse() {
