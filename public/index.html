@@ -75,13 +75,15 @@
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
+    
+
     <link rel="stylesheet" href="./css/font-awesome.css">
-    <link rel="stylesheet" href="./css/newstyle.css">
     <!--<link rel="stylesheet" href="./css/style.css">-->
     <link rel="stylesheet" href="./css/validator.css">
     <link rel="stylesheet" href="./css/icons.css">
     <link rel="stylesheet" href="./css/btn.social.css">
-
+    <link rel="stylesheet" href="./css/newstyle.css">
+    
     <title>Designer Match</title>
 </head>
 
@@ -104,34 +106,41 @@
             <div id="logo">
                 <img src="images/LP_LOGO.png" alt="Logo Designer Match">
             </div>
-            <div class="col-sm-6 col-sm-6 section_left banner-fundo">
-                <img src="images/BOOK.png" alt="">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 section_left banner-fundo" id="book">
+                    <img src="images/BOOK.png" alt="">
+
+                </div>
+
+                
+
+                <div class="col-sm-12 col-md-6 section_right banner-fundo">
+                    <h1 class="titulo">
+                        20 atalhos do Photoshop que todo Designer deveria conhecer.
+                    </h1>
+    
+                    <p class="subtitulo">Guia de bolso com os atalhos mais utilizados do Photoshop. Baixe agora e otimize o seu trabalho, dando mais tempo para sua criatividade fluir.</p>
+                    <form id="myForm" action="" onsubmit="leadController.adiciona(event)">
+                        <div> 
+                            <input type="text" name="name" id="nome" placeholder="Nome" required pattern=".{10,}">
+                        </div>
+        
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </div>
+        
+                        <div>
+                            <button type="submit" id="btn-baixar" class="btn btn-warning">
+                                Baixe Grátis
+                            </button>
+                        </div>
+    
+                    </form>
+    
+                </div>
             </div>
 
-            <div class="col-sm-6 col-md-6 section_right banner-fundo">
-                <h1 class="titulo">
-                    20 atalhos do Photoshop que todo Designer deveria conhecer.
-                </h1>
 
-                <p class="subtitulo">Guia de bolso com os atalhos mais utilizados do Photoshop. Baixe agora e otimize o seu trabalho, dando mais tempo para sua criatividade fluir.</p>
-                <form id="myForm" action="" onsubmit="leadController.adiciona(event)">
-                    <div> 
-                        <input type="text" name="name" id="nome" placeholder="Nome" required>
-                    </div>
-    
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-    
-                    <div>
-                        <button type="submit" id="btn-baixar" class="btn btn-warning">
-                            Baixe Grátis
-                        </button>
-                    </div>
-
-                </form>
-
-            </div>
         </main>
     </header>
 

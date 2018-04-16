@@ -1,13 +1,4 @@
-.section_left{
-    min-height: 100%;
-    position: fixed;
-}
 
-.section_right {
-    position: fixed;
-    min-height: 100%;
-    margin-left: 50%;
-}
 
 #logo{
     text-align: center;
@@ -52,3 +43,9 @@ input{
     background-attachment: fixed;
     background-position: center bottom
 }
+
+    @media( max-width: 600px){
+        #book{
+            display: none;
+        }
+    }

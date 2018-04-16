@@ -22,9 +22,12 @@ class LeadController {
 
         $('#myForm')[0].reset();
 
-        $('#obrigado').modal('show');
+        //$('#obrigado').modal('show');
+        window.location.href = "thankyou.html";
         return false;
 
     }
+
+   
 }
 
