@@ -30,9 +30,9 @@ input{
     background-color: #ffa00a;
     color: #fff;
     text-transform: uppercase;
-    text-align: center;
-    margin-left: 40%;
-    width: 30%;
+   
+    /* margin-left: 40%; */
+    /* width: 30%; */
 }
 
 
@@ -40,12 +40,7 @@ input{
     background-image: url("../images/LP_BG.png"); 
       /* background-size: cover; */
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center bottom
 }
 
-    @media( max-width: 600px){
-        #book{
-            display: none;
-        }
-    }
+    
