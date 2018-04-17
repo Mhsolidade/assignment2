@@ -15,7 +15,7 @@
 
 .subtitulo{
     font-family: 'Didact Gothic', sans-serif;
-    color: #7b7b7b;
+    color: #000000;
     font-size: 20px;
 }
 
@@ -25,7 +25,7 @@ input{
     width: 50%;
 }
 
-#btn-baixar{
+.btn-baixar{
     font-family: 'Didact Gothic', sans-serif;
     background-color: #ffa00a;
     color: #fff;
@@ -37,10 +37,26 @@ input{
 
 
 .banner-fundo{
+    position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  height: 100vh;
+  /* width: ; */
+  z-index: -999999;
+
     background-image: url("../images/LP_BG.png"); 
-      /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: center bottom
+      background-size: contain;
+   
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  
+
 }
 
     

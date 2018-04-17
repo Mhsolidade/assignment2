@@ -60,32 +60,38 @@
         <!-- End Google Tag Manager (noscript) -->
       
     <header class="container">
-        <main>
             <div id="logo">
-                <img src="images/LP_LOGO.png" alt="Logo Designer Match">
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-6 section_right banner-fundo">
-                    <img src="images/TESTE.png" alt="">
-                    <a href="https://mvp.designermatch.com.br" type="button" id="btn-baixar" class="btn btn-warning">
-                        Iniciar teste
-                    </a>
+                    <img src="images/LP_LOGO.png" alt="Logo Designer Match">
                 </div>
-                <div class="col-sm-6 col-md-6 section_left banner-fundo">
-                    <h1 class="titulo">
-                        Obrigado por baixar o Guia de bolso do Photoshop ;)
-                    </h1>
-    
-                        <a type="submit" id="baixar" class="btn btn-info">
-                            Baixe Grátis
-                        </a>
-                    
-                    <p class="subtitulo">Aproveite e descubra se você um Designer Júnior, Pleno ou Sênior em um teste rápido e gratuito.</p>
-    
-                </div>
-            </div>
-        </main>
     </header>
+        <main >
+            <div class="banner-fundo"></div>
+          <div class="container">
+                <div class="row ">
+                        <div class="col-sm-12 col-md-6  col-12 text-center">
+                            <img src="images/TESTE.png" class="img-fluid" alt="">
+                            <div>
+                                <a href="https://mvp.designermatch.com.br" type="button" class="btn btn-baixar btn-warning">
+                                    Iniciar teste
+                                </a>
+        
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-12">
+                            <h1 class="titulo">
+                                Obrigado por baixar o Guia de bolso do Photoshop ;)
+                            </h1>
+                                
+                            <p class="subtitulo"> Aproveite e descubra se você um Designer Júnior, Pleno ou Sênior em um teste <strong>rápido</strong> e gratuito.</p>
+            
+                        </div>
+                    </div>
+
+
+          </div>
+           
+        </main>
+  
 
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -108,8 +114,23 @@
 
     <script>
         
-        $('#baixar').attr({target: '_blank', 
-                    href  : 'guia.pdf'});
+        // $('#baixar').attr({target: '_blank', 
+        //             href  : 'guia.pdf'});
+
+  var req = new XMLHttpRequest();
+  req.open("GET", "guia.pdf", true);
+  req.responseType = "blob";
+
+  req.onload = function (event) {
+    var blob = req.response;
+    // console.log(blob.size);
+    var link=document.createElement('a');
+    link.href=window.URL.createObjectURL(blob);
+    link.download="Guia.pdf";
+    link.click();
+  };
+
+  req.send();
         
               
     </script>

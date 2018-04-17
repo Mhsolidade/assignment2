@@ -26,8 +26,25 @@
     margin-left: 18%;
 }
 
-
 .banner-fundo{
-    background-image: url("../images/LP_BG.png");    
-    
+    position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  height: 100vh;
+  /* width: ; */
+  z-index: -999999;
+
+    background-image: url("../images/LP_BG.png"); 
+      background-size: contain;
+   
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+  
+
 }
